@@ -1,7 +1,7 @@
 # SOUND
 ## Description
 To optimize efforts in Software Quality
- Assurance activities, we propose a novel Code-line-level defect prediction (CLDP) method,
+ Assurance (SQA) activities, we propose a novel Code-line-level defect prediction (CLDP) method,
  Spectrum infOrmation and caUsality aNalysis based coDe-line
 level defect prediction (SOUND).
 
@@ -19,7 +19,7 @@ The file-level datasets (in [`/dataset/File-level`](/dataset/File-level/)) conta
 The line-level datasets (in [`/dataset/Line-level`](/dataset/Line-level/)) contain the following columns
 
 - `File` : A file name of source code
-- `Line_number` : A line number where source code is defective
+- `Line_number` : A line number of a defective code line
 - `SRC` :  A content in source code line
 ### Repository Structure
 ```
@@ -100,12 +100,12 @@ SOUND
 ```
 
 ### Installation
-1. clone the github repository by using the following command:
+1. clone the github repository by using the following command
 
 ```
  git clone https://github.com/SOUNDLineDP/SOUND.git
 ```
-2. use the following command to install required libraries in conda environment:
+2. use the following command to install required libraries in conda environment
 
 ```
  conda env create -f requirements.yml
@@ -113,7 +113,7 @@ SOUND
 ```
 ## Usage
 ### SOUND
-SOUND consists of four parts: `preprocessing`, `line-level analysis`, `file-level lassification`, and `global ranking`.
+SOUND consists of four parts: `preprocessing`, `line-level analysis`, `file-level classification`, and `global ranking`.
 
 The commands below should be executed under the folder [`/sound/src/`](/sound/src/)
 #### Preprocessing and Line-level Analysis
@@ -156,7 +156,7 @@ We provide the source code of SOTA baselines:
  |ErrorProne|[`/sound/src/models/ErrorProne/run_ErrorProne.py`](/sound/src/models/ErrorProne/run_ErrorProne.py)|A Google’s static analysis tool that builds on top of a primary Java compiler (javac) to check errors in source code based on a set of error-prone rules.|
 
  #### GLANCE and LineDP
- 1. run the command to get results predicted by `GLANCE` and `LineDP` , details can be edited in `def run_default()` function
+ 1. run the command in [`/sound/src/`](/sound/src/) to get results predicted by `GLANCE` and `LineDP` , details can be edited in `def run_default()` function
  ```shell
  python main.py
  ```
