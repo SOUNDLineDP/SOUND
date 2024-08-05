@@ -8,7 +8,7 @@ level defect prediction (SOUND).
 This is the source code for the paper "Boosting Code-line-level Defect Prediction with
  Spectrum Information and Causality Analysis".
 
-## Datasets
+### Datasets
 [`/dataset`](/dataset/) stores all 19 projects.
 
 The file-level datasets (in [`/dataset/File-level`](/dataset/File-level/)) contain the following columns:
@@ -21,7 +21,7 @@ The line-level datasets (in [`/dataset/Line-level`](/dataset/Line-level/)) conta
 - `File` : A file name of source code
 - `Line_number` : A line number where source code is defective
 - `SRC` :  A content in source code line
-## Repository Structure
+### Repository Structure
 ```
 SOUND
 │  environment.yml
@@ -99,7 +99,7 @@ SOUND
 
 ```
 
-## Installation
+### Installation
 1. clone the github repository by using the following command:
 
 ```
