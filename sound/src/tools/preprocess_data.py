@@ -61,7 +61,6 @@ def create_code_df(code_str, filename):
     is_comments = []
     is_blank_line = []
 
-
     comments = re.findall(r'(/\*[\s\S]*?\*/)',code_str,re.DOTALL)
     comments_str = '\n'.join(comments)
     comments_list = comments_str.split('\n')

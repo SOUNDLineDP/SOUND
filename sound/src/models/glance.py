@@ -3,7 +3,7 @@ from sound.src.utils.helper import *
 from base_model import BaseModel
 
 
-root_path = r'D:/1_Research/line-level-defect-prediction-master/'
+root_path = r'D:/line-level-defect-prediction-master/'
 dataset_string = 'Dataset'
 result_string = 'Result'
 result_path = f'{root_path}{result_string}'

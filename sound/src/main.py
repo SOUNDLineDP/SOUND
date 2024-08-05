@@ -32,6 +32,7 @@ def run_cross_release_predict(prediction_model):
 
 
 def run_default():
+    # RQ1
     run_cross_release_predict(Glance_LR_Mixed_Sort)
     run_cross_release_predict(Glance_EA_Mixed_Sort)
     run_cross_release_predict(Glance_MD_Mixed_Sort)

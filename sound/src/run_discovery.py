@@ -46,7 +46,6 @@ releases = ['ambari-1.2.0', 'ambari-2.1.0', 'ambari-2.2.0', 'ambari-2.4.0', 'amb
             'zookeeper-3.4.6', 'zookeeper-3.5.1', 'zookeeper-3.5.2',
 ]
 
-#
 collected_df = pd.DataFrame()
 
 
@@ -61,12 +60,9 @@ def read_data(folder: str, selected_name:str) -> pd.DataFrame:
     return df
 
 
-# %% 邻接矩阵转换为图的边信息
 def matrix_to_dgraph(matrix: np.ndarray, columns: List[str], threshold: float = 1.0) -> List[str]:
     dgraph = []
     for i in range(matrix.shape[0]):
-        # columns[i] -> 其他节点的因果关系依次输出
-        # for j in range(matrix.shape[1]):
         if matrix[i, collected_df.shape[1] - 1] > threshold:
             dgraph.append(f"{columns[i]} -> {columns[collected_df.shape[1] - 1]} :{matrix[i, collected_df.shape[1] - 1]}")
     return dgraph
