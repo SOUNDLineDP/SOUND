@@ -20,10 +20,17 @@ The line-level datasets (in [`/dataset/Line-level`](/dataset/Line-level/)) conta
 - `File` : A file name of source code
 - `Line_number` : A line number where source code is defective
 - `SRC` :  A content in source code line
-
-
-## Repository Structure
-
 ## Environment Setup
+1. clone the github repository by using the following command:
 
+```
+git clone https://github.com/SOUNDLineDP/SOUND.git
+```
+2. use the following command to install required libraries in conda environment:
+
+```
+ conda env create -f requirements.yml
+ conda activate causal_research
+```
 ## Experiment
+
