@@ -25,7 +25,6 @@ The line-level datasets (in [`/dataset/Line-level`](/dataset/Line-level/)) conta
 ```
 SOUND
 │  environment.yml
-│  list.txt
 │  README.md
 │  
 ├─.idea
