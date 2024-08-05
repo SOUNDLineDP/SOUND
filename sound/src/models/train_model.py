@@ -245,5 +245,5 @@ def train_model(dataset_name):
 
 
 if __name__ == "__main__":
-    for dataset_name in list(all_releases.keys())[9:]:
+    for dataset_name in all_releases.keys():
         train_model(dataset_name)
